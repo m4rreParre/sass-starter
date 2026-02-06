@@ -1,1 +1,24 @@
 // Breakpoints: Media query mixins and responsive breakpoint variables
+
+// Breakpoint values
+$breakpoints: ( 
+    //widths
+  'sm': 640px,   // Phones landscape
+  'md': 768px,   // Tablets
+  'lg': 1024px,  // Laptops
+  'xl': 1280px,  // Desktops
+  '2xl': 1536px  // Large screens
+);
+
+// Media query mixin
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found in $breakpoints.";
+  }
+}
+
+// Usage: @include respond-to('md') { ... }

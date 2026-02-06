@@ -1,1 +1,28 @@
 // Variables: Colors, fonts, spacing, sizing - all design tokens go here
+
+// Colors
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$text-color: #333;
+$bg-color: #fff;
+
+// Typography
+$font-family-base: 'Inter', sans-serif;
+$font-family-heading: 'Poppins', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+$line-height-heading: 1.2;
+
+// Spacing
+$spacing-tight: 0.25rem;      // Tight spacing (icons, badges)
+$spacing-compact: 0.5rem;     // Compact elements
+$spacing-comfortable: 1rem;   // Comfortable default
+$spacing-relaxed: 1.5rem;     // Relaxed spacing
+$spacing-spacious: 2rem;      // Spacious sections
+$spacing-airy: 3rem;          // Very airy sections
+
+// Other
+$border-radius: 4px;
+$transition-speed: 0.3s;
+

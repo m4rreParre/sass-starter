@@ -1,1 +1,19 @@
-// Mixins: Reusable style patterns and functions (e.g., flexbox, transitions, animations)
+// Mixins: Reusable style patterns and functions
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property: all) {
+  transition: $property 0.3s ease;
+}
+
+@mixin hover-lift {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
