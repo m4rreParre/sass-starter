@@ -1,0 +1,23 @@
+// Main: Master stylesheet - imports all partials in the correct order for compilation
+
+// 1. Abstracts (no CSS output)
+@use 'abstracts/variables'as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/breakpoints' as *;
+
+// 2. Base styles
+@use 'base/reset' as *;
+@use 'base/typography' as *;
+
+// 3. Layout
+@use 'layout/header' as *;
+@use 'layout/footer' as *;
+// ... other layout files
+
+// 4. Components
+@use 'components/component' as *;
+// ... other component files
+
+// 5. Pages (last, for specificity)
+@use 'pages/page' as *;
+// ... other page files
